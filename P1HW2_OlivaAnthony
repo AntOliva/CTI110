@@ -1,0 +1,41 @@
+# Anthony Oliva
+# 2/16/2025
+# P1HW2
+# This program calculates and displays travel expenses based on user input.
+
+"""
+Pseudocode:
+1. Ask the user to enter their total budget.
+2. Ask the user to enter their travel destination.
+3. Prompt the user to input estimated expenses for:
+   - Fuel
+   - Accommodation/Hotel
+   - Food
+4. Calculate the remaining balance after deducting expenses from the budget.
+7. Display a breakdown of all expenses.
+8. Show the remaining balance.
+9. End the program.
+"""
+
+print("This program calculates and displays travel expenses")
+
+
+budget= int(input("Enter budget: "))
+destination= input("Enter your travel destination: ")
+
+fuel_cost= input("How much do you think you will spend on gas? ")
+hotel_cost= input("Approximately, how much will you need for accomodation/hotel?")
+food_cost= input("Lastly, how much do you need for food?")
+
+remaining_balance= budget - (fuel_cost + hotel_cost + food_cost)
+
+
+print("-------------Travel Expenses------------")
+print("Location:" , destination)
+print("Initial Budget:" , budget)
+
+print("Fuel:" , fuel_cost)
+print("Hotel:" , hotel_cost)
+print("Food:" , food_cost)
+
+print("Remaining Balance:" , remaining_balance)
